@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+/*
+#593493 Roxo
+#833CA3 Violeta
+#FF7F00 Laranja
+*/
+body,
+html {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #280f33;
+    border-radius: 7px;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 7px;
+    width: 470px;
+}
+
+header {
+    color: #f0efeb;
+    background-color: #ae8355;
+    text-align: center;
+
+
+}
+
+section>div {
+    background-color: #e97e12;
+    border-radius: 7px;
+    padding-left: 05px;
+    width: 500px;
+    margin: auto;
+    margin-bottom: 7px;
+}
+
+p {
+    padding-left: 05px;
+    text-align: justify;
+    font-size: 15px;
+    font-style: normal;
+}
+
+footer {
+    background-color: #62478a;
+    color: #fff;
+    font-style: italic;
+    padding: 05px;
+
+    text-align: center;
+    width: 460px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-color: #ff7f00;
+    }
+
+
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        background-color: #ff7f00;
+    }
+
+
+}
+@media screen and (min-width: 250px) and (max-width: 768px) {
+    body {
+        background-color: #ff7f00;
+    }
+
+}
+
+
