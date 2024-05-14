@@ -14,21 +14,22 @@
     <label>Selecione o tipo de Serviço:</label>
 
     <select id="transactionType">
-        <option value="deposit">Depósito</option>
-        <option value="withdraw">Saque de Conta</option>
-        <option value="checkBalance">Saldo em Conta</option>
+        <option value="depositarDinheiro">Depósito</option>
+        <option value="sacarDinheiro">Saque de Conta</option>
+        <option value="checarDinheiro">Saldo em Conta</option>
+        <!--Todos os options value recebem camelCase-->
     </select>
 
-    <button onclick="processTransaction()">Escolhido</button> <!--temos o elemento que vai procurar qual foi o tipo de opção que escolhemos-->
+    <button onclick="processTransaction()">Iniciar</button>  <!--temos o elemento que vai procurar qual foi o tipo de opção que escolhemos-->
 
     <script>
         var balance = 0; //variável com valor ínicial de 0, balança signífica o saldo//
 
         function processTransaction() {
-            var type = document.getElementById("transactionType").value; //o comando que analisa o tipo e o valor da translação
+            var type = document.getElementById("TransactionType").value; //o comando que analisa o tipo e o valor da translação
             var amount = 0; //responsável pela permissão de números quebrados
 
-            if (type === "deposit" || type === "withdraw") { 
+            if (type === "depositarDinheiro" || type === "sacarDinheiro") { 
                 amount = parseFloat(prompt("Insira o valor da transação:"));
                //
                 if (isNaN(amount)) {
@@ -37,20 +38,20 @@
                 }
 
                 //function deposit() {
-                function deposit() {
+                function Depósito() {
 
-                    var amount = prompt("Faça um Depósito na sua Conta:");
+                    var amount = prompt("Quanto quer depositar na sua conta:");
                     balance += parseFloat(amount);
                     updateBalance();
                 }
 
-                function withdraw() {
+                function sacarDinheiro() {
                     var amount = prompt("Quanto quer retirar da sua Conta:");
                     balance -= parseFloat(amount);
                     updateBalance();
                 }
 
-                function checkBalance() {
+                function checarDinheiro() {
                     alert("Your current balance is: $" + balance.toFixed(2));
                 }
 
@@ -61,7 +62,7 @@
 
             }
             switch (type) {
-                case "deposit":
+                case "depositarDinheiro":
                     deposit(amount);
                     break;
                 case "withdraw":
