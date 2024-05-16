@@ -1,0 +1,26 @@
+@charset "UTF-08";
+
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif; 
+    background-color: rgba(148, 23, 111, 0.829);
+    background-image: url(/assents/atari.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+   
+
+}
+
+h1{
+    font-size: 1.9em;
+    font-style: italic;
+    color: aliceblue;
+    
+}
+
+canvas{
+    border: 5px solid rgb(70, 14, 58);
+    background-color: rgb(0, 0, 0);
+    
+}
